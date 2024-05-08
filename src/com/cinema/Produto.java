@@ -2,6 +2,7 @@ package com.cinema;
 
 import java.util.Date;
 
+
 public class Produto {
     private String nome;
     private String categoria;
@@ -28,6 +29,7 @@ public class Produto {
     public Produto() {
 
     }
+
 
     public String getNome() {
         return nome;
