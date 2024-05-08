@@ -23,10 +23,15 @@ public class Cliente {
         this.cpf = cpf;
         this.preferencias = preferencias;
     }
+        /** Número total de clientes criados. */
+        private static int numClientes = 0;
+    
+        /** Número total de clientes criados, acessível mesmo por classes derivadas. */
+        protected static int numClientes2 = 0;
 
     // Contrutor sem metodos para o List do sistema.
         public Cliente() {
-            this.idCliente = idCliente;
+            this.idCliente = numClientes;
             this.nome = nome;
             this.sobrenome = sobrenome;
             this.endereco = endereco;
@@ -34,7 +39,11 @@ public class Cliente {
             this.email = email;
             this.cpf = cpf;
             this.preferencias = preferencias;
+            numClientes++;
         }
+
+
+
 
         // Getters e Setters
 
