@@ -8,7 +8,8 @@ public class Main {
 
             Sistema sistema = new Sistema();
             Cliente cliente = new Cliente();
-            String cadastrarteste = sistema.cadastrarCliente(cliente);
+            Ingresso ingresso = new Ingresso();
+            String cadastrarteste = cliente.cadastrarCliente(cliente);
             System.out.println(cadastrarteste);
     }
 }
