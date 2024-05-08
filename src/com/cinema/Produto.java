@@ -86,4 +86,18 @@ public class Produto {
     public void setProdutoId(int produtoId) {
         this.produtoId = produtoId;
     }
+
+    @Override
+public String toString() {
+    return "Produto{" +
+            "nome='" + nome + '\'' +
+            ", categoria='" + categoria + '\'' +
+            ", dataFabricacao=" + dataFabricacao +
+            ", dataValidade=" + dataValidade +
+            ", precoUnitario=" + precoUnitario +
+            ", quantidadeEstoque=" + quantidadeEstoque +
+            ", produtoId=" + produtoId +
+            '}';
+}
+
 }

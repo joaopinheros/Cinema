@@ -76,4 +76,12 @@ public class Estoque {
         }
         return produtos;
     }
+
+    @Override
+    public String toString() {
+        return "Estoque{" +
+                "Lista de estoque ='" + itensEstoque + '\'' +
+                '}';
+
+}
 }

@@ -1,5 +1,6 @@
 package com.cinema;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Despesa {
@@ -37,4 +38,15 @@ public class Despesa {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+     @Override
+    public String toString() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        return "Despesa{" +
+                "valor=" + valor +
+                ", data=" + dateFormat.format(data) +
+                ", descricao='" + descricao + '\'' +
+                '}';
+    }
+    
 }

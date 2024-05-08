@@ -3,22 +3,22 @@ package com.cinema;
 // Sessão é referente a sala do cinema.
 
 public class Sala {
-    private  int idSessao;
+    private  int idsala;
     private int capacidade;
     private String tipo;
 
-    public Sala(int idSessao, int capacidade, String tipo) {
-        this.idSessao = idSessao;
+    public Sala(int idsala, int capacidade, String tipo) {
+        this.idsala = idsala;
         this.capacidade = capacidade;
         this.tipo = tipo;
     }
 
-    public int getIdSessao() {
-        return idSessao;
+    public int getIdsala() {
+        return idsala;
     }
 
-    public void setIdSessao(int idSessao) {
-        this.idSessao = idSessao;
+    public void setIdsala(int idsala) {
+        this.idsala = idsala;
     }
 
     public int getCapacidade() {
@@ -36,4 +36,14 @@ public class Sala {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+@Override
+    public String toString() {
+    return "Sala{" +
+            "idsala=" + idsala +
+            ", capacidade=" + capacidade +
+            ", tipo='" + tipo + '\'' +
+            '}';
+}
+
 }

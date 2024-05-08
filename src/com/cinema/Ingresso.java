@@ -1,5 +1,6 @@
 package com.cinema;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Ingresso {
@@ -74,5 +75,18 @@ public class Ingresso {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        return "Ingresso{" +
+                "idIngresso=" + idIngresso +
+                ", tipo='" + tipo + '\'' +
+                ", filme=" + filme +
+                ", sala=" + sala +
+                ", dataHora=" + dateFormat.format(dataHora) +
+                ", preco=" + preco +
+                '}';
     }
 }

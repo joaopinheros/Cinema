@@ -31,4 +31,12 @@ public class ItemEstoque {
     public void removerQuantidade(int quantidade) {
         this.quantidade -= quantidade;
     }
+
+@Override
+    public String toString() {
+    return "ItemEstoque{" +
+            "produto=" + produto +
+            ", quantidade=" + quantidade +
+            '}';
+}
 }
