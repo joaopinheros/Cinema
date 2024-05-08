@@ -8,7 +8,6 @@ public class Cliente {
         private String telefone;
         private String email;
         private String cpf;
-        private String preferencias;
 
         /** Número total de clientes criados. */
         private static int numClientes = 0;
@@ -25,7 +24,6 @@ public class Cliente {
             this.telefone = telefone;
             this.email = email;
             this.cpf = cpf;
-            this.preferencias = preferencias;
             numClientes++;
         }
 
@@ -87,13 +85,6 @@ public class Cliente {
             this.cpf = cpf;
         }
 
-        public String getPreferencias() {
-            return preferencias;
-        }
-
-        public void setPreferencias(String preferencias) {
-            this.preferencias = preferencias;
-        }
 
     /** To String*/
     @Override
@@ -106,7 +97,6 @@ public class Cliente {
                 ", telefone='" + telefone + '\'' +
                 ", email='" + email + '\'' +
                 ", cpf='" + cpf + '\'' +
-                ", preferencias='" + preferencias + '\'' +
-                '}';
+                 '}';
     }
 }

@@ -55,9 +55,6 @@ public class Sistema {
         System.out.println("Digite o CPF do cliente:");
         String cpf = sc.nextLine();
         novoCliente.setCpf(cpf);
-        System.out.println("Digite as preferências do cliente:");
-        String preferencias = sc.nextLine();
-        novoCliente.setPreferencias(preferencias);
 
         clientes.add(novoCliente);
         return novoCliente.toString();
