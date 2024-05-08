@@ -29,24 +29,6 @@ public class Cliente {
             numClientes++;
         }
 
-
-    @Override
-    public String toString() {
-        return "Cliente{" +
-                "idCliente=" + idCliente +
-                ", nome='" + nome + '\'' +
-                ", sobrenome='" + sobrenome + '\'' +
-                ", endereco='" + endereco + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", email='" + email + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", preferencias='" + preferencias + '\'' +
-                '}';
-    }
-
-    /** To String*/
-
-
         // Getters e Setters
 
         public int getIdCliente() {
@@ -113,4 +95,18 @@ public class Cliente {
             this.preferencias = preferencias;
         }
 
+    /** To String*/
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "idCliente=" + idCliente +
+                ", nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", email='" + email + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", preferencias='" + preferencias + '\'' +
+                '}';
+    }
 }
