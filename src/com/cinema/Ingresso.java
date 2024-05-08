@@ -19,6 +19,15 @@ public class Ingresso {
         this.preco = preco;
     }
 
+    public Ingresso() {
+        this.idIngresso = idIngresso;
+        this.tipo = tipo;
+        this.filme = filme;
+        this.sessao = sessao;
+        this.dataHora = dataHora;
+        this.preco = preco;
+    }
+
     public int getIdIngresso() {
         return idIngresso;
     }

@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b7c9f35-17b5-4acf-80e5-6117c75f6a92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/Despesa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/Filme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/Sala.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/cinema/Sistema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Produto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715124444008</updated>
-      <workItem from="1715124445013" duration="1885000" />
+      <workItem from="1715124445013" duration="3868000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,5 @@
 package com.cinema;
 
-import javax.xml.crypto.Data;
 import java.util.Date;
 
 public class Produto {
@@ -18,6 +17,10 @@ public class Produto {
         this.dataValidade = dataValidade;
         this.precoUnitario = precoUnitario;
         this.quantidadeEstoque = quantidadeEstoque;
+    }
+
+    public Produto() {
+
     }
 
     public String getNome() {

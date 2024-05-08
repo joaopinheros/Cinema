@@ -12,8 +12,20 @@ public class Cliente {
 
         // Construtor
 
-        public Cliente(int idCliente, String nome, String sobrenome, String endereco, String telefone, String email,
-                       String cpf, String preferencias) {
+
+    public Cliente(int idCliente, String nome, String sobrenome, String endereco, String telefone, String email, String cpf, String preferencias) {
+        this.idCliente = idCliente;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.email = email;
+        this.cpf = cpf;
+        this.preferencias = preferencias;
+    }
+
+    // Contrutor sem metodos para o List do sistema.
+        public Cliente() {
             this.idCliente = idCliente;
             this.nome = nome;
             this.sobrenome = sobrenome;

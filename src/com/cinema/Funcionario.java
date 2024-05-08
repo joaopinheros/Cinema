@@ -12,8 +12,15 @@ public class Funcionario {
         this.senha = senha;
     }
 
+    public Funcionario(){
+        this.idFuncionario = idFuncionario;
+        this.usuario = usuario;
+        this.senha = senha;
+    }
+
     public int getIdFuncionario() {
         return idFuncionario;
+
     }
 
     public void setIdFuncionario(int idFuncionario) {
