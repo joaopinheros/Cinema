@@ -46,11 +46,11 @@ public class Ingresso {
         System.out.println("Digite o Filme: ");
         sc.nextLine(); // Consumir a quebra de linha deixada pelo nextDouble() antes de ler a string
         String filme = sc.nextLine();
-        novoIngresso.setFilme(filme);
+        novoIngresso.setFilme(getFilme());
 
         System.out.println("Digite a Sala do filme:");
         int sala = sc.nextInt();
-        novoIngresso.setSala(sala);
+        novoIngresso.setSala(getSala());
 
         ingressos.add(novoIngresso);
         return ingressos.toString();
