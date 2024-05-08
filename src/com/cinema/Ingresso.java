@@ -6,15 +6,15 @@ public class Ingresso {
     private int idIngresso;
     private String tipo;
     private Filme filme;
-    private Sessao sessao;
+    private Sala sala;
     private Date dataHora;
     private double preco;
 
-    public Ingresso(int idIngresso, String tipo, Filme filme, Sessao sessao, Date dataHora, double preco) {
+    public Ingresso(int idIngresso, String tipo, Filme filme, Sala sala, Date dataHora, double preco) {
         this.idIngresso = idIngresso;
         this.tipo = tipo;
         this.filme = filme;
-        this.sessao = sessao;
+        this.sala = sala;
         this.dataHora = dataHora;
         this.preco = preco;
     }
@@ -23,7 +23,7 @@ public class Ingresso {
         this.idIngresso = idIngresso;
         this.tipo = tipo;
         this.filme = filme;
-        this.sessao = sessao;
+        this.sala = sala;
         this.dataHora = dataHora;
         this.preco = preco;
     }
@@ -52,12 +52,12 @@ public class Ingresso {
         this.filme = filme;
     }
 
-    public Sessao getSala() {
-        return sessao;
+    public Sala getSala() {
+        return sala;
     }
 
-    public void setSala(Sessao sessao) {
-        this.sessao = sessao;
+    public void setSala(Sala sala) {
+        this.sala = sala;
     }
 
     public Date getDataHora() {

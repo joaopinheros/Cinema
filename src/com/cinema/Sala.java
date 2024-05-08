@@ -2,12 +2,12 @@ package com.cinema;
 
 // Sessão é referente a sala do cinema.
 
-public class Sessao {
+public class Sala {
     private  int idSessao;
     private int capacidade;
     private String tipo;
 
-    public Sessao(int idSessao, int capacidade, String tipo) {
+    public Sala(int idSessao, int capacidade, String tipo) {
         this.idSessao = idSessao;
         this.capacidade = capacidade;
         this.tipo = tipo;

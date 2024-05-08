@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b7c9f35-17b5-4acf-80e5-6117c75f6a92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/ItemEstoque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Estoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Sala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Sistema.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "joaopinheros"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/joaopinheros/Cinema.git",
+    "accountId": "ed91dbc4-4e51-442a-b203-acc326b85127"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -37,7 +51,6 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -52,7 +65,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -65,22 +79,10 @@
       <option name="presentableId" value="Default" />
       <updated>1715124444008</updated>
       <workItem from="1715124445013" duration="3868000" />
-      <workItem from="1715173981256" duration="1557000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

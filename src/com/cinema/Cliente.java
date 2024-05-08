@@ -10,26 +10,13 @@ public class Cliente {
         private String cpf;
         private String preferencias;
 
-        // Construtor
-
-
-    public Cliente(int idCliente, String nome, String sobrenome, String endereco, String telefone, String email, String cpf, String preferencias) {
-        this.idCliente = idCliente;
-        this.nome = nome;
-        this.sobrenome = sobrenome;
-        this.endereco = endereco;
-        this.telefone = telefone;
-        this.email = email;
-        this.cpf = cpf;
-        this.preferencias = preferencias;
-    }
         /** Número total de clientes criados. */
         private static int numClientes = 0;
     
         /** Número total de clientes criados, acessível mesmo por classes derivadas. */
         protected static int numClientes2 = 0;
 
-    // Contrutor sem metodos para o List do sistema.
+        /** Contrutor sem metodos para o List do sistema.*/
         public Cliente() {
             this.idCliente = numClientes;
             this.nome = nome;
@@ -43,6 +30,21 @@ public class Cliente {
         }
 
 
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "idCliente=" + idCliente +
+                ", nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", email='" + email + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", preferencias='" + preferencias + '\'' +
+                '}';
+    }
+
+    /** To String*/
 
 
         // Getters e Setters
