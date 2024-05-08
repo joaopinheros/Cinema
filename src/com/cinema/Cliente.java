@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class Cliente {
         private int idCliente;
         private String nome;
-        private String sobrenome;
         private String endereco;
         private String telefone;
         private String email;
@@ -27,16 +26,9 @@ public class Cliente {
         public String cadastrarCliente(Cliente cliente) {
             Cliente novoCliente = new Cliente();
 
-            System.out.println("Digite o ID do cliente:");
-            int idCliente = sc.nextInt();
-            novoCliente.setIdCliente(idCliente);
             System.out.println("Digite o nome do cliente:");
-            sc.nextLine(); // Consumir a quebra de linha deixada pelo nextInt() antes de ler a string
             String nome = sc.nextLine();
             novoCliente.setNome(nome);
-            System.out.println("Digite o sobrenome do cliente:");
-            String sobrenome = sc.nextLine();
-            novoCliente.setSobrenome(sobrenome);
             System.out.println("Digite o endereço do cliente:");
             String endereco = sc.nextLine();
             novoCliente.setEndereco(endereco);
@@ -59,7 +51,6 @@ public class Cliente {
         public Cliente() {
             this.idCliente = numClientes;
             this.nome = nome;
-            this.sobrenome = sobrenome;
             this.endereco = endereco;
             this.telefone = telefone;
             this.email = email;
@@ -83,14 +74,6 @@ public class Cliente {
 
         public void setNome(String nome) {
             this.nome = nome;
-        }
-
-        public String getSobrenome() {
-            return sobrenome;
-        }
-
-        public void setSobrenome(String sobrenome) {
-            this.sobrenome = sobrenome;
         }
 
         public String getEndereco() {
@@ -132,7 +115,6 @@ public class Cliente {
         return "Cliente{" +
                 "idCliente=" + idCliente +
                 ", nome='" + nome + '\'' +
-                ", sobrenome='" + sobrenome + '\'' +
                 ", endereco='" + endereco + '\'' +
                 ", telefone='" + telefone + '\'' +
                 ", email='" + email + '\'' +
