@@ -28,39 +28,6 @@ public class Sistema {
         sc = new Scanner(System.in);
     }
 
-    // Metodos de Clientes
-
-    public String cadastrarCliente(Cliente cliente) {
-        Cliente novoCliente = new Cliente();
-
-        System.out.println("Digite o ID do cliente:");
-        int idCliente = sc.nextInt();
-        novoCliente.setIdCliente(idCliente);
-        System.out.println("Digite o nome do cliente:");
-        sc.nextLine(); // Consumir a quebra de linha deixada pelo nextInt() antes de ler a string
-        String nome = sc.nextLine();
-        novoCliente.setNome(nome);
-        System.out.println("Digite o sobrenome do cliente:");
-        String sobrenome = sc.nextLine();
-        novoCliente.setSobrenome(sobrenome);
-        System.out.println("Digite o endereço do cliente:");
-        String endereco = sc.nextLine();
-        novoCliente.setEndereco(endereco);
-        System.out.println("Digite o telefone do cliente:");
-        String telefone = sc.nextLine();
-        novoCliente.setTelefone(telefone);
-        System.out.println("Digite o email do cliente:");
-        String email = sc.nextLine();
-        novoCliente.setEmail(email);
-        System.out.println("Digite o CPF do cliente:");
-        String cpf = sc.nextLine();
-        novoCliente.setCpf(cpf);
-
-        clientes.add(novoCliente);
-        return novoCliente.toString();
-    }
-
-
     // Metodos de Ingresso
 
     public List<Ingresso> cadastrarIngresso(Ingresso ingresso){
@@ -112,9 +79,38 @@ public class Sistema {
         System.out.println("/    Opção 3 - Relatorios     /");
         System.out.println("/    Opção 4 - Cadastros     /");
         System.out.println("/    Opção 5 - Sair     /");
+        
+        Scanner scan = new Scanner(System.in);
+        int option = scan.nextInt();
+        switch (option) {
+        default:
+        System.out.println("------------Opção Inválida!------------");
+
+        case 4:
+        System.out.println("----------------------------------------------");
+        System.out.println("**********Selecione a Opção desejada**********");
+        System.out.println("----------------------------------------------");
+        System.out.println("/    Opção 1 - Cadastro de Cliente     /");
+        System.out.println("/    Opção 2 - Cadastro de Produto    /");
+        System.out.println("/    Opção 3 - Cadastro de Filme     /");
+        System.out.println("/    Opção 4 - Sair     /");
+
+            int option1 = scan.nextInt();
+
+                switch(option1){
+                    default:
+                    System.out.println("------------Opção Inválida!------------");
+
+                    case 1:
+                    
+                    
+                }
+
+
     }
 
 
 
 
+}
 }
