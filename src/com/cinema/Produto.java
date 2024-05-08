@@ -9,14 +9,20 @@ public class Produto {
     private Date dataValidade;
     private double precoUnitario;
     private int quantidadeEstoque;
+    private int produtoId;
+    private static int count = 0;
+    
 
-    public Produto(String nome, String categoria, Date dataFabricacao, Date dataValidade, double precoUnitario, int quantidadeEstoque) {
+
+    public Produto(String nome, String categoria, Date dataFabricacao, Date dataValidade, double precoUnitario, int quantidadeEstoque, int produtoId) {
         this.nome = nome;
         this.categoria = categoria;
         this.dataFabricacao = dataFabricacao;
         this.dataValidade = dataValidade;
         this.precoUnitario = precoUnitario;
         this.quantidadeEstoque = quantidadeEstoque;
+        this.produtoId = count;
+        count++;
     }
 
     public Produto() {
@@ -69,5 +75,13 @@ public class Produto {
 
     public void setQuantidadeEstoque(int quantidadeEstoque) {
         this.quantidadeEstoque = quantidadeEstoque;
+    }
+    
+    public int getProdutoId() {
+        return produtoId;
+    }
+
+    public void setProdutoId(int produtoId) {
+        this.produtoId = produtoId;
     }
 }
