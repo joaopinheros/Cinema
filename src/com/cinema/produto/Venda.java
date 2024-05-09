@@ -1,4 +1,4 @@
-package com.cinema;
+package com.cinema.produto;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,7 +14,9 @@ public class Venda{
         
         /** Lista de itens de venda na venda atual. */
         private List<ItemVenda> itensVenda;
-    
+        /** Data em que a venda foi realizada. */
+        private Date dataVenda;
+
         public List<ItemVenda> getItensVenda() {
             return itensVenda;
         }
@@ -22,9 +24,6 @@ public class Venda{
         public void setItensVenda(List<ItemVenda> itensVenda) {
             this.itensVenda = itensVenda;
         }
-        
-          /** Data em que a venda foi realizada. */
-        private Date dataVenda;
     
         
            /**

@@ -1,4 +1,4 @@
-package com.cinema;
+package com.cinema.produto;
 
 import java.util.List;
 import java.util.ArrayList;

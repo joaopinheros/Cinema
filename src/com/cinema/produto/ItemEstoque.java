@@ -1,4 +1,4 @@
-package com.cinema;
+package com.cinema.produto;
 
 /**
  * Representa um item de estoque que inclui um produto e sua quantidade.

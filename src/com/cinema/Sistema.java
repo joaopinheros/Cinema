@@ -1,7 +1,7 @@
 package com.cinema;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.cinema.cliente.Cliente;
+
 import java.util.Scanner;
 
 public class Sistema {
