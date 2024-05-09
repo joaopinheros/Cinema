@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b7c9f35-17b5-4acf-80e5-6117c75f6a92" name="Changes" comment="Mudanças de metodos">
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/balcao/BalcaoAut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/balcao/BalcaoFun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/func/Administrador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/func/Login.java" afterDir="false" />
+    <list default="true" id="5b7c9f35-17b5-4acf-80e5-6117c75f6a92" name="Changes" comment="Criei classes {administrador, balcoes, e login}, deletei classe despesa e comentei as classes em java doc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/cliente/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Despesa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/produto/Estoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/cine/Filme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/func/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/cine/Ingresso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/ItemEstoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/produto/ItemEstoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/produto/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/cine/Sala.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Sistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/produto/Venda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/cinema/produto/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/produto/Estoque.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +77,7 @@
       <workItem from="1715124445013" duration="3868000" />
       <workItem from="1715198501693" duration="2655000" />
       <workItem from="1715201253290" duration="3887000" />
-      <workItem from="1715210605379" duration="4701000" />
+      <workItem from="1715210605379" duration="6004000" />
     </task>
     <task id="LOCAL-00001" summary="Criando metodo para adicionar cliente">
       <option name="closed" value="true" />
@@ -125,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715199551413</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Criei classes {administrador, balcoes, e login}, deletei classe despesa e comentei as classes em java doc">
+      <option name="closed" value="true" />
+      <created>1715215504620</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715215504620</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +140,7 @@
     <MESSAGE value="Criando metodo para adicionar cliente" />
     <MESSAGE value="Mudanças de metodos para a classe cliente e classe ingresso" />
     <MESSAGE value="Mudanças de metodos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mudanças de metodos" />
+    <MESSAGE value="Criei classes {administrador, balcoes, e login}, deletei classe despesa e comentei as classes em java doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criei classes {administrador, balcoes, e login}, deletei classe despesa e comentei as classes em java doc" />
   </component>
 </project>

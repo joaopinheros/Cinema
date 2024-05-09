@@ -1,5 +1,6 @@
 package com.cinema.produto;
 
+import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -9,6 +10,7 @@ import java.util.ArrayList;
 
 // vai faltar um metodo para dar baixa no estoque de a cordo com a venda
 public class Estoque {
+    private List<Produto> produtos = new ArrayList<>();
     private List<ItemEstoque> itensEstoque;
 
     public Estoque() {
@@ -76,6 +78,44 @@ public class Estoque {
         }
         return produtos;
     }
+
+    /**
+     * Método para gerar um alerta se algum produto está abaixo do estoque mínimo ou próximo da data de validade.
+     *
+     * @param estoqueMinimo Quantidade mínima de estoque para considerar como alerta de estoque baixo
+     * @return Uma lista de strings indicando os alertas para os produtos, ou uma lista vazia se não houver alertas
+     */
+    public List<String> alerta(int estoqueMinimo) {
+        List<String> alertas = new ArrayList<>();
+
+        Date hoje = new Date(); // Data atual
+
+        for (Produto produto : produtos) {
+            if (produto.getQuantidadeEstoque() <= estoqueMinimo) {
+                alertas.add("O produto " + produto.getNome() + " está acabando. Quantidade em estoque: " + produto.getQuantidadeEstoque());
+            }
+
+            long diasRestantes = calcularDiasRestantes(produto.getDataValidade(), hoje);
+            if (diasRestantes <= 30) {
+                alertas.add("O produto " + produto.getNome() + " está próximo da data de validade. Dias restantes: " + diasRestantes);
+            }
+        }
+
+        return alertas;
+    }
+
+    /**
+     * Método privado para calcular os dias restantes até a data de validade.
+     *
+     * @param dataValidade Data de validade do produto
+     * @param hoje Data atual
+     * @return Número de dias restantes até a data de validade
+     */
+    private long calcularDiasRestantes(Date dataValidade, Date hoje) {
+        long diffEmMilissegundos = dataValidade.getTime() - hoje.getTime();
+        return diffEmMilissegundos / (24 * 60 * 60 * 1000);
+    }
+
 
     @Override
     public String toString() {
