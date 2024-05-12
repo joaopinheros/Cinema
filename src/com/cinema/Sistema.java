@@ -1,21 +1,30 @@
 package com.cinema;
 
+import com.cinema.cine.Filme;
 import com.cinema.cliente.Cliente;
+import com.cinema.func.Funcionario;
+import com.cinema.produto.Produto;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class Sistema {
- private static Scanner input = new Scanner(System.in);
- private static Scanner input2 = new Scanner(System.in);
- Cliente cliente = new Cliente();
+    private static Scanner input = new Scanner(System.in);
+    private static Scanner input2 = new Scanner(System.in);
+
+    Cliente cliente = new Cliente();
+    Funcionario funcionario = new Funcionario();
+    Filme filme = new Filme();
+    Produto produto = new Produto();
 
     private static Sistema instance;
+
     public static Sistema getInstance() {
-    if (instance == null) {
-        instance = new Sistema();
+        if (instance == null) {
+            instance = new Sistema();
+        }
+        return instance;
     }
-    return instance;
-}
 
     private static void exibirInicio() {
         System.out.println("----------------------------------------------");
@@ -25,7 +34,7 @@ public class Sistema {
     }
 
     public void menuadm() {
-       
+
         System.out.println("----------------------------------------------");
         System.out.println("-----------Bem vindo ao CineMark--------------");
         System.out.println("----------------------------------------------");
@@ -38,37 +47,60 @@ public class Sistema {
         System.out.println("/    Opção 5 - Sair     /");
 
         int option = input.nextInt();
-        switch (option){
+        switch (option) {
             default:
-            System.out.println("------------Opção Inválida!------------");
+                System.out.println("------------Opção Inválida!------------");
 
-        case 4:
-            exibirInicio();
-            System.out.println("----------------------------------------------");
-            System.out.println("----------------------------------------------");
-            System.out.println("**********Selecione a Opção desejada**********");
-            System.out.println("----------------------------------------------");
-            System.out.println("/    Opção 1 - Cadastro de Produto     /");
-            System.out.println("/    Opção 2 - Cadastro de Filmes    /");
-            System.out.println("/    Opção 3 - Cadastro de Cliente     /");
-            System.out.println("/    Opção 4 - Cadastro de Funcionário     /");
+            case 4:
+                exibirInicio();
+                System.out.println("----------------------------------------------");
+                System.out.println("----------------------------------------------");
+                System.out.println("**********Selecione a Opção desejada**********");
+                System.out.println("----------------------------------------------");
+                System.out.println("/    Opção 1 - Cadastro de Produto     /");
+                System.out.println("/    Opção 2 - Cadastro de Filmes    /");
+                System.out.println("/    Opção 3 - Cadastro de Cliente     /");
+                System.out.println("/    Opção 4 - Cadastro de Funcionário     /");
 
                 int option1 = input2.nextInt();
-                switch (option1){
+                switch (option1) {
 
-                case 3:
-                cliente.cadastrarCliente(cliente);
-                System.out.println("----------------------------------------------");
-                System.out.println("--------Cliente Cadastrado com Sucesso--------");
-                System.out.println("----------------------------------------------");
-                System.out.println("----------------------------------------------");
-                menuadm();
-                       
-            }
-        case 5:
-        System.out.println("---Obrigado pela preferência! Volte Sempre!---");
-        System.exit(0); 
+                    case 1:
+                        Produto.cadastrarProduto(produto);
+                        System.out.println("----------------------------------------------");
+                        System.out.println("--------Produto Cadastrado com Sucesso--------");
+                        System.out.println("----------------------------------------------");
+                        System.out.println("----------------------------------------------");
+                        menuadm();
+
+                    case 2:
+                        Filme.cadastrarFilme(filme);
+                        System.out.println("----------------------------------------------");
+                        System.out.println("--------Filme Cadastrado com Sucesso--------");
+                        System.out.println("----------------------------------------------");
+                        System.out.println("----------------------------------------------");
+                        menuadm();
+
+                    case 3:
+                        cliente.cadastrarCliente(cliente);
+                        System.out.println("----------------------------------------------");
+                        System.out.println("--------Cliente Cadastrado com Sucesso--------");
+                        System.out.println("----------------------------------------------");
+                        System.out.println("----------------------------------------------");
+                        menuadm();
+
+                    case 4:
+                        funcionario.cadastrarFuncionario(funcionario);
+                        System.out.println("----------------------------------------------");
+                        System.out.println("--------Funcionario Cadastrado com Sucesso--------");
+                        System.out.println("----------------------------------------------");
+                        System.out.println("----------------------------------------------");
+                        menuadm();
+                }
+            case 5:
+                System.out.println("---Obrigado pela preferência! Volte Sempre!---");
+                System.exit(0);
         }
-       
+
     }
 }

@@ -28,6 +28,7 @@ public class Cliente {
 
     /** Inicializando lista de clientes */
     private static List<Cliente> clientes = new ArrayList<>();
+
     private static Scanner sc = new Scanner(System.in);
 
     /**

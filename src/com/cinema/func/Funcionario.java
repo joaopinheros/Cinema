@@ -1,9 +1,17 @@
 package com.cinema.func;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  * Representa um funcionário do cinema.
  */
 public class Funcionario {
+
+    private static List<Funcionario> funcionarios = new ArrayList<>();
+    private static Scanner sc = new Scanner(System.in);
+    private static int proximoId = 1;
 
     private int idFuncionario; // ID único do funcionário
     private String nome; // Nome do funcionário
@@ -114,8 +122,45 @@ public class Funcionario {
     public String toString() {
         return "Funcionario{" +
                 "idFuncionario=" + idFuncionario +
+                ", nome='" + nome + '\'' +
                 ", usuario='" + usuario + '\'' +
                 ", senha='" + senha + '\'' +
                 '}';
+    }
+
+    public static String cadastrarFuncionario(Funcionario funcionario) {
+
+        System.out.println("Digite o nome do funcionário:");
+        String nome = sc.nextLine();
+
+        System.out.println("Digite o nome de usuário para login:");
+        String usuario = sc.nextLine();
+
+        System.out.println("Digite a senha para login:");
+        String senha = sc.nextLine();
+
+        Funcionario novoFuncionario = new Funcionario(proximoId, nome, usuario, senha);
+        funcionarios.add(novoFuncionario);
+        proximoId++;
+
+        System.out.println("Funcionário cadastrado com sucesso!");
+        return novoFuncionario.toString();
+    }
+
+    public static void selecionarFuncionario() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite o ID do funcionário que deseja selecionar:");
+        int id = scanner.nextInt();
+
+        for (Funcionario funcionario : funcionarios) {
+            if (funcionario.getIdFuncionario() == id) {
+                System.out.println("Funcionário encontrado:");
+                System.out.println(funcionario);
+                return;
+            }
+        }
+
+        System.out.println("Funcionário não encontrado com o ID fornecido.");
     }
 }

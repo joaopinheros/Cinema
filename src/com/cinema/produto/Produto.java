@@ -1,42 +1,57 @@
 package com.cinema.produto;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
 
 /**
  * Representa um produto disponível no cinema.
  */
 public class Produto {
+    private int produtoId; // Identificador único do produto
     private String nome; // Nome do produto
     private String categoria; // Categoria do produto
     private Date dataFabricacao; // Data de fabricação do produto
     private Date dataValidade; // Data de validade do produto
     private double precoUnitario; // Preço unitário do produto
     private int quantidadeEstoque; // Quantidade em estoque do produto
-    private int produtoId; // Identificador único do produto
-    private static int count = 0; // Contador para gerar IDs únicos
+    private static int count = 1; // Contador para gerar IDs únicos
+    private static Scanner sc = new Scanner(System.in);
+    private static List<Produto> produtos = new ArrayList<>(); // Lista de produtos
 
     /**
      * Construtor para criar um novo produto com todos os detalhes especificados.
      *
+     * @param produtoId         O identificador único do produto.
      * @param nome              O nome do produto.
      * @param categoria         A categoria do produto.
      * @param dataFabricacao    A data de fabricação do produto.
      * @param dataValidade      A data de validade do produto.
      * @param precoUnitario     O preço unitário do produto.
      * @param quantidadeEstoque A quantidade em estoque do produto.
-     * @param produtoId         O identificador único do produto.
      */
-    public Produto(String nome, String categoria, Date dataFabricacao, Date dataValidade,
-                   double precoUnitario, int quantidadeEstoque, int produtoId) {
+    public Produto(int produtoId, String nome, String categoria, Date dataFabricacao, Date dataValidade,
+                   double precoUnitario, int quantidadeEstoque) {
+        this.produtoId = produtoId;
         this.nome = nome;
         this.categoria = categoria;
         this.dataFabricacao = dataFabricacao;
         this.dataValidade = dataValidade;
         this.precoUnitario = precoUnitario;
         this.quantidadeEstoque = quantidadeEstoque;
-        this.produtoId = count; // Atribui o ID e incrementa o contador
-        count++;
     }
+
+    /**
+     * Construtor vazio padrão.
+     */
+    public Produto() {
+        // Utilizado apenas para criar instâncias vazias, se necessário
+    }
+
+    // Getters e Setters
 
     /**
      * Retorna o nome do produto.
@@ -172,13 +187,59 @@ public class Produto {
     @Override
     public String toString() {
         return "Produto{" +
-                "nome='" + nome + '\'' +
+                "produtoId=" + produtoId +
+                ", nome='" + nome + '\'' +
                 ", categoria='" + categoria + '\'' +
                 ", dataFabricacao=" + dataFabricacao +
                 ", dataValidade=" + dataValidade +
                 ", precoUnitario=" + precoUnitario +
                 ", quantidadeEstoque=" + quantidadeEstoque +
-                ", produtoId=" + produtoId +
                 '}';
+    }
+
+    /**
+     * Método para cadastrar um novo produto.
+     *
+     * @return Uma string representando o produto cadastrado.
+     */
+    public static String cadastrarProduto(Produto produto) {
+        System.out.println("Digite o nome do produto:");
+        String nome = sc.nextLine();
+
+        System.out.println("Digite a categoria do produto:");
+        String categoria = sc.nextLine();
+
+        Date dataFabricacao = readDate("data de fabricação (no formato dd/MM/yyyy):");
+
+        Date dataValidade = readDate("data de validade (no formato dd/MM/yyyy):");
+
+        System.out.println("Digite o preço unitário do produto:");
+        double precoUnitario = Double.parseDouble(sc.nextLine());
+
+        System.out.println("Digite a quantidade em estoque do produto:");
+        int quantidadeEstoque = Integer.parseInt(sc.nextLine());
+
+        Produto novoProduto = new Produto(count, nome, categoria, dataFabricacao, dataValidade,
+                precoUnitario, quantidadeEstoque);
+        produtos.add(novoProduto);
+        count++;
+
+        return novoProduto.toString();
+    }
+
+    private static Date readDate(String prompt) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date data = null;
+
+        while (data == null) {
+            try {
+                System.out.println("Digite a " + prompt);
+                data = dateFormat.parse(sc.nextLine());
+            } catch (ParseException e) {
+                System.out.println("Data inválida. Digite novamente.");
+            }
+        }
+
+        return data;
     }
 }

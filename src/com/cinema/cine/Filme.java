@@ -1,5 +1,11 @@
 package com.cinema.cine;
 
+import com.cinema.cliente.Cliente;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 /**
  * Representa um filme do cinema.
  */
@@ -8,6 +14,11 @@ public class Filme {
     private String genero; /** O gênero do filme para assimilar com as preferências do cliente */
     private String diretor; /** O diretor do filme */
     private String descrição; /* A descrição do filme */
+
+    /** Inicializando lista de clientes */
+    private static List<Filme> filmes = new ArrayList<>();
+
+    private static Scanner sc = new Scanner(System.in);
 
     /**
      * Construtor para criar um novo filme.
@@ -21,6 +32,9 @@ public class Filme {
         this.genero = genero;
         this.diretor = diretor;
         this.descrição = descrição;
+    }
+    public Filme(){
+
     }
 
     /**
@@ -100,4 +114,25 @@ public class Filme {
                 ", descrição='" + descrição + '\'' +
                 '}';
     }
+
+    public static String cadastrarFilme(Filme filme) {
+
+        System.out.println("Digite o nome do filme:");
+        String nome = sc.nextLine();
+
+        System.out.println("Digite o gênero do filme:");
+        String genero = sc.nextLine();
+
+        System.out.println("Digite o nome do diretor:");
+        String diretor = sc.nextLine();
+
+        System.out.println("Digite a descrição do filme:");
+        String descricao = sc.nextLine();
+
+        Filme novoFilme = new Filme(nome, genero, diretor, descricao);
+        filmes.add(novoFilme);
+
+        return novoFilme.toString();
+    }
+
 }
