@@ -1,0 +1,36 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"5b7c9f35-17b5-4acf-80e5-6117c75f6a92\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/src/com/cinema/Sistema.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Main.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/com/cinema/Cliente.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Cliente.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/com/cinema/Funcionario.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Funcionario.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/com/cinema/Ingresso.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Ingresso.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/com/cinema/Produto.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Produto.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 5\n}]]></component>\n  <component name=\"ProjectId\" id=\"2g9zBFszWBjIRxRppARe5uzOlaU\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"git-widget-placeholder\": \"main\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150\" />\n        <option value=\"bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"5b7c9f35-17b5-4acf-80e5-6117c75f6a92\" name=\"Changes\" comment=\"\" />\n      <created>1715124444008</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1715124444008</updated>\n      <workItem from=\"1715124445013\" duration=\"3868000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision e06345d720ccb338b3d4a1fe3fdf59683d8de50c)
++++ b/.idea/workspace.xml	(date 1715128557785)
+@@ -4,15 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="5b7c9f35-17b5-4acf-80e5-6117c75f6a92" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/com/cinema/Sistema.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Cliente.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Funcionario.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Produto.java" afterDir="false" />
+-    </list>
++    <list default="true" id="5b7c9f35-17b5-4acf-80e5-6117c75f6a92" name="Changes" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -66,7 +58,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1715124444008</updated>
+-      <workItem from="1715124445013" duration="3868000" />
++      <workItem from="1715124445013" duration="4112000" />
+     </task>
+     <servers />
+   </component>

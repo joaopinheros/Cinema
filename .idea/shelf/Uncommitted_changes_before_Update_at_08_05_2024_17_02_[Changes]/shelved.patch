@@ -1,0 +1,195 @@
+Index: src/com/cinema/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.cinema;\n\nimport java.util.Scanner;\n\npublic class Main {\n\n        public static void main(String[] args) {\n\n            Sistema sistema = new Sistema();\n            Cliente cliente = new Cliente();\n            String cadastrarteste = sistema.cadastrarCliente(cliente);\n            System.out.println(cadastrarteste);\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/cinema/Main.java b/src/com/cinema/Main.java
+--- a/src/com/cinema/Main.java	(revision b9194902dc195f40ab0b6c5f317feb68338a462f)
++++ b/src/com/cinema/Main.java	(date 1715198083331)
+@@ -8,7 +8,8 @@
+ 
+             Sistema sistema = new Sistema();
+             Cliente cliente = new Cliente();
+-            String cadastrarteste = sistema.cadastrarCliente(cliente);
++            Ingresso ingresso = new Ingresso();
++            String cadastrarteste = sistema.cadastrarIngresso(ingresso);
+             System.out.println(cadastrarteste);
+     }
+ }
+\ No newline at end of file
+Index: src/com/cinema/Sistema.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.cinema;\n\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Scanner;\n\npublic class Sistema {\n    private List <Cliente> clientes;\n    private List <Produto> produtos;\n    private List <Ingresso> ingressos;\n    private List <Sala> salas;\n    private List <Funcionario> funcionarios;\n    private List <Filme> filmes;\n    private List <Despesa> despesas;\n\n    private Scanner sc;\n\n    // Iniciando um novo array list vazio de cada uma das listas instânciadas\n\n    public Sistema(){\n        clientes = new ArrayList<>();\n        produtos = new ArrayList<>();\n        ingressos = new ArrayList<>();\n        salas = new ArrayList<>();\n        funcionarios = new ArrayList<>();\n        filmes = new ArrayList<>();\n        despesas = new ArrayList<>();\n        sc = new Scanner(System.in);\n    }\n\n    // Metodos de Clientes\n\n    public String cadastrarCliente(Cliente cliente) {\n        Cliente novoCliente = new Cliente();\n\n        System.out.println(\"Digite o ID do cliente:\");\n        int idCliente = sc.nextInt();\n        novoCliente.setIdCliente(idCliente);\n        System.out.println(\"Digite o nome do cliente:\");\n        sc.nextLine(); // Consumir a quebra de linha deixada pelo nextInt() antes de ler a string\n        String nome = sc.nextLine();\n        novoCliente.setNome(nome);\n        System.out.println(\"Digite o sobrenome do cliente:\");\n        String sobrenome = sc.nextLine();\n        novoCliente.setSobrenome(sobrenome);\n        System.out.println(\"Digite o endereço do cliente:\");\n        String endereco = sc.nextLine();\n        novoCliente.setEndereco(endereco);\n        System.out.println(\"Digite o telefone do cliente:\");\n        String telefone = sc.nextLine();\n        novoCliente.setTelefone(telefone);\n        System.out.println(\"Digite o email do cliente:\");\n        String email = sc.nextLine();\n        novoCliente.setEmail(email);\n        System.out.println(\"Digite o CPF do cliente:\");\n        String cpf = sc.nextLine();\n        novoCliente.setCpf(cpf);\n        System.out.println(\"Digite as preferências do cliente:\");\n        String preferencias = sc.nextLine();\n        novoCliente.setPreferencias(preferencias);\n\n        clientes.add(novoCliente);\n        return novoCliente.toString();\n    }\n\n\n    // Metodos de Ingresso\n\n    public List<Ingresso> cadastrarIngresso(Ingresso ingresso){\n        Ingresso novoIngresso = new Ingresso();\n\n        System.out.println(\"\");\n        novoIngresso.setIdIngresso(ingresso.getIdIngresso());\n        novoIngresso.setTipo(novoIngresso.getTipo());\n        novoIngresso.setDataHora(novoIngresso.getDataHora());\n        novoIngresso.setPreco(ingresso.getPreco());\n        novoIngresso.setFilme(ingresso.getFilme());\n        novoIngresso.setSala(novoIngresso.getSala());\n\n        ingressos.add(novoIngresso);\n        return ingressos;\n    }\n\n    // Métodos de Produto\n\n    public List<Produto> cadastrarProduto(Produto produto){\n        Produto novoProduto = new Produto();\n        novoProduto.setNome(produto.getNome());\n        novoProduto.setCategoria(produto.getCategoria());\n        novoProduto.setDataFabricacao(produto.getDataFabricacao());\n        novoProduto.setDataValidade(produto.getDataValidade());\n        novoProduto.setPrecoUnitario(produto.getPrecoUnitario());\n        novoProduto.setQuantidadeEstoque(novoProduto.getQuantidadeEstoque());\n\n        produtos.add(novoProduto);\n        return produtos;\n    }\n\n    private static void exibirInicio() {\n        System.out.println(\"----------------------------------------------\");\n        System.out.println(\"-----------------CineMark---------------------\");\n        System.out.println(\"----------------------------------------------\");\n        System.out.println(\"----------------------------------------------\");\n    }\n\n    public void menuadm() {\n        //private static Scanner input = new Scanner(System.in);\n        System.out.println(\"----------------------------------------------\");\n        System.out.println(\"-----------Bem vindo ao CineMark--------------\");\n        System.out.println(\"----------------------------------------------\");\n        System.out.println(\"**********Selecione a Opção desejada**********\");\n        System.out.println(\"----------------------------------------------\");\n        System.out.println(\"/    Opção 1 - Venda     /\");\n        System.out.println(\"/    Opção 2 - Ver Sessões    /\");\n        System.out.println(\"/    Opção 3 - Relatorios     /\");\n        System.out.println(\"/    Opção 4 - Cadastros     /\");\n        System.out.println(\"/    Opção 5 - Sair     /\");\n    }\n\n\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/cinema/Sistema.java b/src/com/cinema/Sistema.java
+--- a/src/com/cinema/Sistema.java	(revision b9194902dc195f40ab0b6c5f317feb68338a462f)
++++ b/src/com/cinema/Sistema.java	(date 1715198300377)
+@@ -1,5 +1,6 @@
+ package com.cinema;
+ 
++import java.time.LocalDateTime;
+ import java.util.ArrayList;
+ import java.util.List;
+ import java.util.Scanner;
+@@ -66,19 +67,31 @@
+ 
+     // Metodos de Ingresso
+ 
+-    public List<Ingresso> cadastrarIngresso(Ingresso ingresso){
++    public String cadastrarIngresso(Ingresso ingresso){
+         Ingresso novoIngresso = new Ingresso();
+ 
+-        System.out.println("");
+-        novoIngresso.setIdIngresso(ingresso.getIdIngresso());
+-        novoIngresso.setTipo(novoIngresso.getTipo());
+-        novoIngresso.setDataHora(novoIngresso.getDataHora());
++        System.out.println("Digite a Identificação do ingresso: ");
++        int idIngresso = sc.nextInt();
++        novoIngresso.setIdIngresso(idIngresso);
++
++        System.out.println("Digite o tipo do ingresso: ");
++        sc.nextLine();
++        String tipo = sc.nextLine();
++        novoIngresso.setTipo(tipo);
++
++        System.out.println("Digite a data e a hora do filme: ");
++        LocalDateTime dataHora = sc.nextLine().
++        novoIngresso.setDataHora(dataHora);
++
++        System.out.println("Digite o preço do ingresso: ");
+         novoIngresso.setPreco(ingresso.getPreco());
++        System.out.println("Digite o Filme : ");
+         novoIngresso.setFilme(ingresso.getFilme());
++        System.out.println("Digite a Sala do filme");
+         novoIngresso.setSala(novoIngresso.getSala());
+ 
+         ingressos.add(novoIngresso);
+-        return ingressos;
++        return ingressos.toString();
+     }
+ 
+     // Métodos de Produto
+Index: src/com/cinema/Ingresso.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.cinema;\n\nimport java.util.Date;\n\npublic class Ingresso {\n    private int idIngresso;\n    private String tipo;\n    private Filme filme;\n    private Sala sala;\n    private Date dataHora;\n    private double preco;\n\n    public Ingresso(int idIngresso, String tipo, Filme filme, Sala sala, Date dataHora, double preco) {\n        this.idIngresso = idIngresso;\n        this.tipo = tipo;\n        this.filme = filme;\n        this.sala = sala;\n        this.dataHora = dataHora;\n        this.preco = preco;\n    }\n\n    public Ingresso() {\n        this.idIngresso = idIngresso;\n        this.tipo = tipo;\n        this.filme = filme;\n        this.sala = sala;\n        this.dataHora = dataHora;\n        this.preco = preco;\n    }\n\n    public int getIdIngresso() {\n        return idIngresso;\n    }\n\n    public void setIdIngresso(int idIngresso) {\n        this.idIngresso = idIngresso;\n    }\n\n    public String getTipo() {\n        return tipo;\n    }\n\n    public void setTipo(String tipo) {\n        this.tipo = tipo;\n    }\n\n    public Filme getFilme() {\n        return filme;\n    }\n\n    public void setFilme(Filme filme) {\n        this.filme = filme;\n    }\n\n    public Sala getSala() {\n        return sala;\n    }\n\n    public void setSala(Sala sala) {\n        this.sala = sala;\n    }\n\n    public Date getDataHora() {\n        return dataHora;\n    }\n\n    public void setDataHora(Date dataHora) {\n        this.dataHora = dataHora;\n    }\n\n    public double getPreco() {\n        return preco;\n    }\n\n    public void setPreco(double preco) {\n        this.preco = preco;\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/cinema/Ingresso.java b/src/com/cinema/Ingresso.java
+--- a/src/com/cinema/Ingresso.java	(revision b9194902dc195f40ab0b6c5f317feb68338a462f)
++++ b/src/com/cinema/Ingresso.java	(date 1715198048575)
+@@ -1,24 +1,17 @@
+ package com.cinema;
+ 
++import java.time.LocalDateTime;
+ import java.util.Date;
++import java.util.Locale;
+ 
+ public class Ingresso {
+     private int idIngresso;
+     private String tipo;
+     private Filme filme;
+     private Sala sala;
+-    private Date dataHora;
++    private LocalDateTime dataHora;
+     private double preco;
+ 
+-    public Ingresso(int idIngresso, String tipo, Filme filme, Sala sala, Date dataHora, double preco) {
+-        this.idIngresso = idIngresso;
+-        this.tipo = tipo;
+-        this.filme = filme;
+-        this.sala = sala;
+-        this.dataHora = dataHora;
+-        this.preco = preco;
+-    }
+-
+     public Ingresso() {
+         this.idIngresso = idIngresso;
+         this.tipo = tipo;
+@@ -28,6 +21,21 @@
+         this.preco = preco;
+     }
+ 
++    /** to string */
++
++    @Override
++    public String toString() {
++        return "Ingresso{" +
++                "idIngresso=" + idIngresso +
++                ", tipo='" + tipo + '\'' +
++                ", filme=" + filme +
++                ", sala=" + sala +
++                ", dataHora=" + dataHora +
++                ", preco=" + preco +
++                '}';
++    }
++
++
+     public int getIdIngresso() {
+         return idIngresso;
+     }
+@@ -60,11 +68,11 @@
+         this.sala = sala;
+     }
+ 
+-    public Date getDataHora() {
++    public LocalDateTime getDataHora() {
+         return dataHora;
+     }
+ 
+-    public void setDataHora(Date dataHora) {
++    public void setDataHora(LocalDateTime dataHora) {
+         this.dataHora = dataHora;
+     }
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"5b7c9f35-17b5-4acf-80e5-6117c75f6a92\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/com/cinema/Cliente.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Cliente.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/com/cinema/Ingresso.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Ingresso.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/com/cinema/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Main.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/com/cinema/Sala.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Sala.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/com/cinema/Sistema.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/com/cinema/Sistema.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\n  \"lastFilter\": {\n    \"state\": \"OPEN\",\n    \"assignee\": \"joaopinheros\"\n  }\n}]]></component>\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\n  \"selectedUrlAndAccountId\": {\n    \"url\": \"https://github.com/joaopinheros/Cinema.git\",\n    \"accountId\": \"ed91dbc4-4e51-442a-b203-acc326b85127\"\n  }\n}]]></component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 5\n}</component>\n  <component name=\"ProjectId\" id=\"2g9zBFszWBjIRxRppARe5uzOlaU\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Application.Main.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"git-widget-placeholder\": \"main\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150\" />\n        <option value=\"bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"5b7c9f35-17b5-4acf-80e5-6117c75f6a92\" name=\"Changes\" comment=\"\" />\n      <created>1715124444008</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1715124444008</updated>\n      <workItem from=\"1715124445013\" duration=\"3868000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b9194902dc195f40ab0b6c5f317feb68338a462f)
++++ b/.idea/workspace.xml	(date 1715198380737)
+@@ -6,10 +6,8 @@
+   <component name="ChangeListManager">
+     <list default="true" id="5b7c9f35-17b5-4acf-80e5-6117c75f6a92" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Cliente.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Ingresso.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/com/cinema/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/com/cinema/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Sala.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/com/cinema/Sistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/cinema/Sistema.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -80,9 +78,22 @@
+       <updated>1715124444008</updated>
+       <workItem from="1715124445013" duration="3868000" />
+     </task>
++    <task id="LOCAL-00001" summary="Criando metodo para adicionar cliente">
++      <option name="closed" value="true" />
++      <created>1715197578887</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1715197578887</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Criando metodo para adicionar cliente" />
++    <option name="LAST_COMMIT_MESSAGE" value="Criando metodo para adicionar cliente" />
++  </component>
+ </project>
+\ No newline at end of file

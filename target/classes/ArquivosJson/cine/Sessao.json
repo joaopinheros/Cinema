@@ -1,0 +1,19 @@
+[
+  {
+    "codSessao": 0,
+    "filme": {
+      "id": 1,
+      "titulo": "Interstellar",
+      "genero": "Ficção Científica",
+      "diretor": "Christopher Nolan",
+      "descrição": "Um grupo de exploradores viaja através de um buraco de minhoca em busca de um novo lar para a humanidade.",
+      "duracao": 169
+    },
+    "sala": {
+      "idsala": 2,
+      "numPoltronas": 80,
+      "status": true
+    },
+    "dataHora": "16/08/2024 22h"
+  }
+]
