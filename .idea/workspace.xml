@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b7c9f35-17b5-4acf-80e5-6117c75f6a92" name="Changes" comment="Criando o alerta de produtos">
+    <list default="true" id="5b7c9f35-17b5-4acf-80e5-6117c75f6a92" name="Changes" comment="Criando manipulaçoes de json">
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ArquivosJson/cine/Filme.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ArquivosJson/cine/Ingresso.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ArquivosJson/cine/Sala.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/ArquivosJson/cine/Sessao.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/cinema/cine/Sessao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/cinema/manipularjson/cine/ManipularJsonFilme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/cinema/manipularjson/cine/ManipularJsonIngresso.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/cinema/manipularjson/cine/ManipularJsonSala.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/cinema/manipularjson/cine/ManipularJsonSessao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -110,7 +108,7 @@
       <workItem from="1715210605379" duration="9280000" />
       <workItem from="1715377064074" duration="932000" />
       <workItem from="1715550575482" duration="6904000" />
-      <workItem from="1715621348565" duration="8755000" />
+      <workItem from="1715621348565" duration="9058000" />
     </task>
     <task id="LOCAL-00001" summary="Criando metodo para adicionar cliente">
       <option name="closed" value="true" />
@@ -160,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715216833501</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Criando manipulaçoes de json">
+      <option name="closed" value="true" />
+      <created>1715630336232</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715630336232</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +189,7 @@
     <MESSAGE value="Mudanças de metodos" />
     <MESSAGE value="Criei classes {administrador, balcoes, e login}, deletei classe despesa e comentei as classes em java doc" />
     <MESSAGE value="Criando o alerta de produtos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando o alerta de produtos" />
+    <MESSAGE value="Criando manipulaçoes de json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando manipulaçoes de json" />
   </component>
 </project>
