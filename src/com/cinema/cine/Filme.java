@@ -1,56 +1,53 @@
 package com.cinema.cine;
 
-import com.cinema.cliente.Cliente;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 /**
  * Representa um filme do cinema.
  */
 public class Filme {
-    private String nome; /** O nome do filme */
+    private int id;
+    private String titulo; /** O nome do filme */
     private String genero; /** O gênero do filme para assimilar com as preferências do cliente */
     private String diretor; /** O diretor do filme */
     private String descrição; /* A descrição do filme */
+    private int duracao; /* Em minutos */
 
-    /** Inicializando lista de clientes */
-    private static List<Filme> filmes = new ArrayList<>();
 
-    private static Scanner sc = new Scanner(System.in);
-
-    /**
-     * Construtor para criar um novo filme.
-     * @param nome O nome do filme.
-     * @param genero O gênero do filme.
-     * @param diretor O diretor do filme.
-     * @param descrição A descrição do filme.
-     */
-    public Filme(String nome, String genero, String diretor, String descrição) {
-        this.nome = nome;
+    public Filme(int id, String titulo, String genero, String diretor, String descrição, int duracao) {
+        this.id = id;
+        this.titulo = titulo;
         this.genero = genero;
         this.diretor = diretor;
         this.descrição = descrição;
+        this.duracao = duracao;
     }
+
+    public Filme(String titulo, String genero, String diretor, String descrição, int duracao) {
+        this.titulo = titulo;
+        this.genero = genero;
+        this.diretor = diretor;
+        this.descrição = descrição;
+        this.duracao = duracao;
+    }
+
     public Filme(){
 
     }
 
-    /**
-     * Obtém o nome do filme.
-     * @return O nome do filme.
-     */
-    public String getNome() {
-        return nome;
+
+    public int getId() {
+        return id;
     }
 
-    /**
-     * Define o nome do filme.
-     * @param nome O novo nome do filme.
-     */
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     /**
@@ -101,6 +98,14 @@ public class Filme {
         this.descrição = descrição;
     }
 
+    public int getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(int duracao) {
+        this.duracao = duracao;
+    }
+
     /**
      * Retorna uma representação em string do filme.
      * @return Uma string que representa o filme.
@@ -108,31 +113,13 @@ public class Filme {
     @Override
     public String toString() {
         return "Filme{" +
-                "nome='" + nome + '\'' +
+                "id=" + id +
+                ", titulo='" + titulo + '\'' +
                 ", genero='" + genero + '\'' +
                 ", diretor='" + diretor + '\'' +
                 ", descrição='" + descrição + '\'' +
+                ", duracao=" + duracao +
                 '}';
     }
-
-    public static String cadastrarFilme(Filme filme) {
-
-        System.out.println("Digite o nome do filme:");
-        String nome = sc.nextLine();
-
-        System.out.println("Digite o gênero do filme:");
-        String genero = sc.nextLine();
-
-        System.out.println("Digite o nome do diretor:");
-        String diretor = sc.nextLine();
-
-        System.out.println("Digite a descrição do filme:");
-        String descricao = sc.nextLine();
-
-        Filme novoFilme = new Filme(nome, genero, diretor, descricao);
-        filmes.add(novoFilme);
-
-        return novoFilme.toString();
-    }
-
 }
+

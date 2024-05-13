@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "titulo": "Interstellar",
+    "genero": "Ficção Científica",
+    "diretor": "Christopher Nolan",
+    "descrição": "Um grupo de exploradores viaja através de um buraco de minhoca em busca de um novo lar para a humanidade.",
+    "duracao": 169
+  },
+  {
+    "id": 2,
+    "titulo": "Pulp Fiction",
+    "genero": "Crime",
+    "diretor": "Quentin Tarantino",
+    "descrição": "Histórias entrelaçadas sobre criminosos em Los Angeles.",
+    "duracao": 154
+  },
+  {
+    "id": 3,
+    "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+    "genero": "Fantasia",
+    "diretor": "Peter Jackson",
+    "descrição": "Um hobbit relutante é encarregado de destruir um anel mágico que pode ameaçar a Terra-média.",
+    "duracao": 178
+  },
+  {
+    "id": 4,
+    "titulo": "O Poderoso Chefão",
+    "genero": "Drama",
+    "diretor": "Francis Ford Coppola",
+    "descrição": "Um poderoso chefe da máfia tenta transferir o controle de seu império para seu filho relutante.",
+    "duracao": 175
+  },
+  {
+    "id": 5,
+    "titulo": "Interestelar",
+    "genero": "Ficção Científica",
+    "diretor": "Christopher Nolan",
+    "descrição": "Um grupo de astronautas é enviado em uma missão para encontrar um novo planeta para a humanidade.",
+    "duracao": 169
+  },
+  {
+    "id": 6,
+    "titulo": "Homem Aranha",
+    "genero": "Super Heroi",
+    "diretor": "Marvel Comics",
+    "descrição": "Amigo da vizinhança",
+    "duracao": 120
+  },
+  {
+    "id": 7,
+    "titulo": "Bob Esponja",
+    "genero": "Animação",
+    "diretor": "Patrick Estrela",
+    "descrição": "Coisas que acontecem na fenda do biquini",
+    "duracao": 135
+  },
+  {
+    "id": 8,
+    "titulo": "Amor de mais",
+    "genero": "amor",
+    "diretor": "amor da silva",
+    "descrição": "muito amor",
+    "duracao": 450
+  }
+]

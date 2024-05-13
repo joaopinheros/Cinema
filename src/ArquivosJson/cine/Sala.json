@@ -1,0 +1,32 @@
+[
+  {
+    "idsala": 1,
+    "numPoltronas": 100,
+    "status": true
+  },
+  {
+    "idsala": 2,
+    "numPoltronas": 80,
+    "status": true
+  },
+  {
+    "idsala": 3,
+    "numPoltronas": 70,
+    "status": true
+  },
+  {
+    "idsala": 4,
+    "numPoltronas": 50,
+    "status": true
+  },
+  {
+    "idsala": 5,
+    "numPoltronas": 20,
+    "status": false
+  },
+  {
+    "idsala": 7,
+    "numPoltronas": 68,
+    "status": false
+  }
+]

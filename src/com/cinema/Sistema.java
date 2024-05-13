@@ -74,7 +74,7 @@ public class Sistema {
                         menuadm();
 
                     case 2:
-                        Filme.cadastrarFilme(filme);
+                        //Filme.cadastrarFilme(filme);
                         System.out.println("----------------------------------------------");
                         System.out.println("--------Filme Cadastrado com Sucesso--------");
                         System.out.println("----------------------------------------------");

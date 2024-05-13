@@ -8,21 +8,19 @@ public class Sala {
     private int idsala;
 
     /** Capacidade máxima de assentos da sala. */
-    private int capacidade;
+    private int numPoltronas;
 
-    /** Tipo da sala (ex: 2D, 3D, VIP, etc.). */
-    private String tipo;
+    private boolean status;
 
     /**
      * Construtor da Sala.
      * @param idsala O identificador único da sala.
-     * @param capacidade A capacidade máxima de assentos da sala.
-     * @param tipo O tipo da sala (ex: 2D, 3D, VIP, etc.).
-     */
-    public Sala(int idsala, int capacidade, String tipo) {
+     * @param numPoltronas máxima de assentos da sala.
+     * */
+    public Sala(int idsala, int numPoltronas, boolean status) {
         this.idsala = idsala;
-        this.capacidade = capacidade;
-        this.tipo = tipo;
+        this.numPoltronas = numPoltronas;
+        this.status = status;
     }
 
     /**
@@ -41,36 +39,20 @@ public class Sala {
         this.idsala = idsala;
     }
 
-    /**
-     * Obtém a capacidade da sala.
-     * @return A capacidade da sala.
-     */
-    public int getCapacidade() {
-        return capacidade;
+    public int getNumPoltronas() {
+        return numPoltronas;
     }
 
-    /**
-     * Define a capacidade da sala.
-     * @param capacidade A nova capacidade da sala.
-     */
-    public void setCapacidade(int capacidade) {
-        this.capacidade = capacidade;
+    public void setNumPoltronas(int numPoltronas) {
+        this.numPoltronas = numPoltronas;
     }
 
-    /**
-     * Obtém o tipo da sala.
-     * @return O tipo da sala.
-     */
-    public String getTipo() {
-        return tipo;
+    public boolean isStatus() {
+        return status;
     }
 
-    /**
-     * Define o tipo da sala.
-     * @param tipo O novo tipo da sala.
-     */
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     /**
@@ -81,8 +63,8 @@ public class Sala {
     public String toString() {
         return "Sala{" +
                 "idsala=" + idsala +
-                ", capacidade=" + capacidade +
-                ", tipo='" + tipo + '\'' +
+                ", numPoltronas=" + numPoltronas +
+                ", status=" + status +
                 '}';
     }
 }
