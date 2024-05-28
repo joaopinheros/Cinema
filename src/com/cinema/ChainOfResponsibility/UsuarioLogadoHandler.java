@@ -11,12 +11,12 @@ public class UsuarioLogadoHandler implements Handler {
     @Override
     public void handleRequest(Request request) {
         if (isUserLoggedIn(request.getUsuario())) {
-            System.out.println("User is logged in: " + request.getUsuario());
+            System.out.println("Usuario logado: " + request.getUsuario());
             if (nextHandler != null) {
                 nextHandler.handleRequest(request);
             }
         } else {
-            System.out.println("User is not logged in: " + request.getUsuario());
+            System.out.println("Usuario não logado: " + request.getUsuario());
         }
     }
 

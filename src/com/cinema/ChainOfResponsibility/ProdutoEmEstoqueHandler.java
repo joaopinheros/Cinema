@@ -11,12 +11,12 @@ public class ProdutoEmEstoqueHandler implements Handler {
     @Override
     public void handleRequest(Request request) {
         if (isProductInStock(request.getProduto())) {
-            System.out.println("Product is in stock: " + request.getProduto());
+            System.out.println("Product em estoque: " + request.getProduto());
             if (nextHandler != null) {
                 nextHandler.handleRequest(request);
             }
         } else {
-            System.out.println("Product is not in stock: " + request.getProduto());
+            System.out.println("Product sem estoque: " + request.getProduto());
         }
     }
 
