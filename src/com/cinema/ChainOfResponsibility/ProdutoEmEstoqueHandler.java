@@ -10,7 +10,7 @@ public class ProdutoEmEstoqueHandler implements Handler {
 
     @Override
     public void handleRequest(Request request) {
-        if (isProductInStock(request.getProduto())) {
+        if (isProdutoEmEstoque(request.getProduto())) {
             System.out.println("Product em estoque: " + request.getProduto());
             if (nextHandler != null) {
                 nextHandler.handleRequest(request);
@@ -20,7 +20,7 @@ public class ProdutoEmEstoqueHandler implements Handler {
         }
     }
 
-    private boolean isProductInStock(String product) {
+    private boolean isProdutoEmEstoque(String product) {
         // Lógica para verificar se o produto está em estoque
         return product != null && !product.isEmpty(); // Simulação simplificada
     }

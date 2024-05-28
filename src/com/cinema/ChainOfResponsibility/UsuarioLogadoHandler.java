@@ -10,7 +10,7 @@ public class UsuarioLogadoHandler implements Handler {
 
     @Override
     public void handleRequest(Request request) {
-        if (isUserLoggedIn(request.getUsuario())) {
+        if (isUsuarioLogadoem(request.getUsuario())) {
             System.out.println("Usuario logado: " + request.getUsuario());
             if (nextHandler != null) {
                 nextHandler.handleRequest(request);
@@ -20,7 +20,7 @@ public class UsuarioLogadoHandler implements Handler {
         }
     }
 
-    private boolean isUserLoggedIn(String Usuario) {
+    private boolean isUsuarioLogadoem(String Usuario) {
         // Lógica para verificar se o usuário está logado
         return Usuario != null &&  Usuario.isEmpty(); // Simulação simplificada
     }
